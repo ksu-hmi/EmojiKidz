@@ -2,11 +2,11 @@
 
 Week 1:
 
-- [ ]  Find similar codes related to the project
-- [ ] research to understand emotion recognition tools
-- [ ] Define core features and functionalities of the mobile app
-- [ ] Establish and identify the technologies, libraries, etc
- - [ ] Create a detailed plan and timeline for the first phase
+- [x]  Find similar codes related to the project
+- [x] research to understand emotion recognition tools
+- [x] Define core features and functionalities of the mobile app
+- [x] Establish and identify the technologies, libraries, etc
+ - [x] Create a detailed plan and timeline for the first phase
  
 Week 2:
 
