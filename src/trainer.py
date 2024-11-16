@@ -60,6 +60,9 @@ def full_layer(input, size):
 
     return tf.matmul(input, W) + b
 
+# function defines a convolutional neural network model for processing input data
+# It includes convolutional layers, dropout layers for regularization, and connected layer
+# model outputs predictions based on an emotion map and uses a keep probability for dropout
 
 def model(x, keep_prob):
 
