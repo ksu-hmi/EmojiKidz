@@ -12,7 +12,7 @@ from src.__init__ import *
 DATASET_SAVE_PATH = os.path.join(os.path.dirname(__file__), os.pardir, 'dataset')
 logger = logging.getLogger('emojifier.data_manager')
 
-
+# this class initializes EmojifierLoader to manage and store files, images, and labels
 class EmojifierLoader(object):
     def __init__(self, source_files):
         self._source = source_files
