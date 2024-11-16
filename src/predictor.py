@@ -23,6 +23,8 @@ def softmax(x):
     e_x = np.exp(x - np.max(x))
     return e_x / e_x.sum()
 
+# captures video from webcam and sets up face detection using OpenCV
+# intializes a face cascade classifier with a specific path and captures video using video capture
 
 def inference(sess, gray_img_input):
     
