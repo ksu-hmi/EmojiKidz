@@ -10,7 +10,7 @@ Week 1:
  
 Week 2:
 
-- [ ]  Continue building on the code.
- - [ ] Add emotions into the code and run
-- [ ]  Install TensorFlow, emotion detector, cv2,
- - [ ] Make 6 commits
+- [x]  Continue building on the code.
+ - [x] Add emotions into the code and run
+- [x]  Install TensorFlow, emotion detector, cv2,
+ - [x] Make 6 commits
