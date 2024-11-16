@@ -12,6 +12,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))
 import src
 from src.__init__ import *
 
+# reads and processes a list of image paths
+# images read and resized but you can change them to your liking :)
 
 def image_reader(image_path_list):
     
