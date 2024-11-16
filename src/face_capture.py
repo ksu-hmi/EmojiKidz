@@ -42,10 +42,10 @@ def generate_faces(saving_path, num):
         # detect the faces, bounding boxes
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-        # draw the rectangle (bounding-boxes)
+        # draw the circle, showing the shape of the face
         for (x,y,w,h) in faces:
 
-            cv2.rectangle(frame, (x,y), (x+w, y+h), (255,0,0), 2)
+            cv2.circle(frame, (x,y), (x+w, y+h), (255,0,0), 2)
 
             img_path = os.path.join(saving_path, '_' + str(time.time()) + '.png')
             cv2.imwrite(img_path, frame[y:y+h, x:x+w, :])
