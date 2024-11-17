@@ -22,7 +22,8 @@ import cv2
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))
 from src.__init__ import *
 
-
+# GENERATE FACES function. This captures images from a webcam and saves the cropped face images
+# to a specified folder using the OpenCV Cascade Classifier to detect faces in the video stream
 def generate_faces(saving_path, num):
 
     face_cascade = cv2.CascadeClassifier(config_parser['OPEN_CV']['cascade_classifier_path'])
