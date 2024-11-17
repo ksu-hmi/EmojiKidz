@@ -63,7 +63,8 @@ def generate_faces(saving_path, num):
     cap.release()
     cv2.destroyAllWindows()
 
-
+# HAAR CASCADE CLASSIFIER is the script used to detect faces and is loaded via the cv2.Cascade
+#Classifier method. It saves cropped images using timestamp as the filename and runs in a loop
 if __name__ == '__main__':
 
     logger = logging.getLogger('emojifier.face_capture')
