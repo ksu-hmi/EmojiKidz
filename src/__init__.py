@@ -5,7 +5,8 @@ import json
 from configparser import ConfigParser
 
 # INSTALL opencv 
-pip3 install opencv-python
+
+
 
 CONFIG_FILE = os.path.join(
     os.path.dirname(__file__),
