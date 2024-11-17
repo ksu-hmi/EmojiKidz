@@ -14,3 +14,4 @@ Week 2:
  - [x] Add emotions into the code and run
 - [x]  Install TensorFlow, emotion detector, cv2,
  - [x] Make 6 commits
+ - [x] Research the various scripts and describe
