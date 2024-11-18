@@ -41,8 +41,8 @@ class EmojifierLoader(object):
 
         return x, y
 
-
 class EmojifierDataManager(object):
+    
     def __init__(self):
         logger.info('Loading the dataset ...')
         self.train = EmojifierLoader(['train_batch_'+str(i) for i in range(1)]).load()
@@ -50,14 +50,14 @@ class EmojifierDataManager(object):
         self.test = EmojifierLoader(['test_batch_0']).load()
         logger.info('Loaded the test-set into the memory !')
 
-
+#This function reads a serialized file (typically a .pkl file) using Python's pickle library and returns the deserialized content.
 def unpickle(f):
     with open(os.path.join(DATASET_SAVE_PATH , f), 'rb') as file:
         dictionary = pickle.load(file)
 
     return dictionary
 
-
+#This function converts a vector of class labels into a one-hot encoded matrix. 
 def one_hot(vec, classes=5):
     n = len(vec)
     one_hot_vec = np.zeros((n, classes))
