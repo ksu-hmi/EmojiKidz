@@ -115,7 +115,9 @@ if __name__ == '__main__':
 
     logger = logging.getLogger('emojifier.predictor')
     CHECKPOINT_SAVE_PATH = os.path.join(os.path.dirname(__file__), os.pardir, 'model_checkpoints')
+    #CHECKPOINT_SAVE_PATH: Sets up the directory path to the model checkpoints, where the trained model weights are stored.
     EMOJI_FILE_PATH = os.path.join(os.path.dirname(__file__), os.pardir, 'emoji')
+    #EMOJI_FILE_PATH: Sets up the directory path for storing emoji images that will be used for visual representation of predicted emotions.
     tf.reset_default_graph()
 
     # used to map the output from the prediction to the emotion class
