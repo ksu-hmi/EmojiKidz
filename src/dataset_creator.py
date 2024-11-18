@@ -50,7 +50,8 @@ def image_label_generator(emotion_map):
         logger.debug('length images list: {}'.format(len(image_list)))
         image_lists.append(image_list)
         labels.extend([v]*len(image_list))
-        
+        #logger.debug('length images list: ...'): Logs the number of images found in the directory for debugging purposes.
+    
     images = np.vstack((image_reader(image_list) for image_list in image_lists))
 
     return images, labels
@@ -91,8 +92,8 @@ def train_test_splitter(images, labels):
 
 
 def create_dataset(images, labels):
-    
-    images = np.reshape(images, (-1, 48*48))
+    #This line reshapes the images array into a new shape.
+    images = np.reshape(images, (-1, 46*46))
     logger.debug('images-shape: {}, length-labels: {}'.format(
         images.shape, len(labels)
     ))
