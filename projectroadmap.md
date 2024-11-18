@@ -11,6 +11,7 @@ Week 1:
 Week 2:
 
 - [x]  Continue building on the code.
+- [x]  Download and installed OpenCV
  - [x] Add emotions into the code and run
 - [x]  Install TensorFlow, emotion detector, cv2,
  - [x] Make 6 commits
