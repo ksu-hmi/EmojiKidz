@@ -91,9 +91,9 @@ def from_cam(sess):
                             fontScale,
                             fontColor,
                             lineType)
-
+#if confidence level is showing less than 0.5, it'll tell the user it is unable to predict emotion
             else: 
-                cv2.putText(frame,'NEUTRAL', 
+                cv2.putText(frame,'Unable to Predict Emotion', 
                             bottomLeftCornerOfText, 
                             font, 
                             fontScale,
