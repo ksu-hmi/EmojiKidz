@@ -99,7 +99,7 @@ def test(emoji_data, sess):
 
     accs = []
 
-    for i in tqdm.tqdm(range(0, L, 30)):
+    for i in tqdm.tqdm(range(0, L, 60)):
         if i+30 <= L:
             x_i = x[i:i+30].reshape(30, 48, 48, 1)
             y_i = y[i:i+30].reshape(30, len(EMOTION_MAP))
