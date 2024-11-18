@@ -91,6 +91,14 @@ def from_cam(sess):
                             fontScale,
                             fontColor,
                             lineType)
+                
+                 # Ask user for verification, user will input y for yes. If not, it will automatically reject it
+                user_input = input("Is the predicted emotion '{index_emo[p]}' correct? (y/n): ").strip().lower()
+                if user_input == 'y':
+                    logger.info("User confirmed the prediction:", index_emo[p])
+                else:
+                    logger.info("User rejected the prediction:", index_emo[p])
+
 #if confidence level is showing less than 0.5, it'll tell the user it is unable to predict emotion
             else: 
                 cv2.putText(frame,'Unable to Predict Emotion', 
