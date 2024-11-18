@@ -89,7 +89,7 @@ def model(x, keep_prob):
 
     return y_conv
 
-
+#This is slitting the images into a group of 60 and and compaires the accuracy 
 def test(emoji_data, sess):
     logger.info('CALCULATING TESTSET ACCURACY ...')
     L = len(emoji_data.test.labels)
