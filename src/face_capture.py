@@ -30,7 +30,8 @@ def generate_faces(saving_path, num):
 
     if not os.path.exists(saving_path):
         os.makedirs(saving_path)
-
+# Creates the directory if it does not exist. This ensures that the images can be saved without any issues
+    
     i = 0
 
     while i < num:
