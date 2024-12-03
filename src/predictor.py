@@ -9,11 +9,16 @@ import numpy as np
 import glob
 import tqdm
 
+#This part of the code modifies the search path to include the parent directory
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))
+
+#This part of the code imports specific modules that is model from the first and everything 
+#from the second
 from src.trainer import model
 from src.__init__ import *
 
-
+#This part of the code configures TensorFlow to use the GPU dynamically
+#By allowing memory growth instead of reserving all GPU memory at once
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 
