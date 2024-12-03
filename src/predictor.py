@@ -47,7 +47,7 @@ def inference(sess, gray_img_input):
         confidence: {}'''.format(y_c, p[0], index_emo[p[0]], score))
     return p[0], score
         
-
+#This function processes live video feed and perfoms operations like face detection and emotion recognition
 def from_cam(sess):
     
     face_cascade = cv2.CascadeClassifier(config_parser['OPEN_CV']['cascade_classifier_path'])
