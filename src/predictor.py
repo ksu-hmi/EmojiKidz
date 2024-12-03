@@ -81,6 +81,7 @@ def from_cam(sess):
             
             #If the model's emotion read confidence is > 50% it retrieves a corresponding emoji
             # and resized it to match the detected face
+            # Alpha blending is used to control the opacity of the emoji overlay
             if confidence > 0.5:
             
                 img2 = emoji_to_pic[index_emo[p]]
