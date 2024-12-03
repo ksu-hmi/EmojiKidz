@@ -16,3 +16,10 @@ Week 2:
 - [x]  Install TensorFlow, emotion detector, cv2,
  - [x] Make 6 commits
  - [x] Research the various scripts and describe
+
+Week 3
+- [ ] Continue modifying code
+- [ ] Refine and improve facial detection
+- [ ] Visual Feedback; add color codes to represent child's emotions
+- [ ] Run code one more time
+- [ ] submit 
