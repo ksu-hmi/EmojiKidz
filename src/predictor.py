@@ -79,6 +79,8 @@ def from_cam(sess):
             p, confidence = inference(sess, face_img_gray)
             logger.critical('model inference time: {}'.format(time.time() - s))
             
+            #If the model's emotion read confidence is > 50% it retrieves a corresponding emoji
+            # and resized it to match the detected face
             if confidence > 0.5:
             
                 img2 = emoji_to_pic[index_emo[p]]
